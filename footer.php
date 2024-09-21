@@ -1,11 +1,12 @@
 <div class="footer">
-        <div class="container">
-            <div class="footer__text">
-                Copyright &copy; Daron web. All rights reserved.
-            </div>
-        </div>
+  <div class="container">
+    <div class="footer__text">
+      Copyright &copy; Davron web. All rights reserved.
     </div>
+  </div>
+</div>
 
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 </body>
+
 </html>

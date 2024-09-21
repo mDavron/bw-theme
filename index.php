@@ -21,12 +21,10 @@
             <div class="about__text">
               <!-- <?php print_r($card[0] ['card_year'] . ' ' . $card[0]['card_text'])?> -->
               <?php the_sub_field('card_text'); ?>
-
             </div>
           </div>
           <?php endwhile; ?>
           <?php endif; ?>
-
         </div>
       </div>
     </div>
