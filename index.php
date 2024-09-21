@@ -92,24 +92,33 @@
           <p class="block__text">Maybe not everything, but we provide you some stuff.</p>
         </div>
         <div class="provide__inner">
+          <?php $arr = get_field('services_card')?>
+          <?php if(get_field('services_card')): ?>
+          <?php while(has_sub_field('services_card')) : ?>
           <div class="provide__item">
-            <i class="icon-chart-line"></i>
-            <h3 class="provide__item-title">Some Analytics</h3>
-            <p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
+            <img src="<?php the_sub_field('services_card_img'); ?>" alt="">
+            <h3 class="provide__item-title"><?php the_sub_field('services_card_title')?></h3>
+            <!-- <h2><?php $arr = print_r($arr[0]);?></h2> -->
+            <p class="provide__item-text"><?php the_sub_field('services_card_text')?>
             </p>
           </div>
+          <?php endwhile; ?>
+          <?php endif; ?>
+          <!--
           <div class="provide__item">
             <i class="icon-heart"></i>
             <h3 class="provide__item-title">We provide you love</h3>
             <p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
             </p>
           </div>
+
           <div class="provide__item">
             <i class="icon-upload-cloud-outline"></i>
             <h3 class="provide__item-title">And Some Cloud</h3>
             <p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
             </p>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </div>

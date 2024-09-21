@@ -216,11 +216,14 @@ body {
 }
 .provide__inner {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
   padding-top: 138px;
 }
 .provide__item {
   text-align: center;
+  width: 33%;
   max-width: 335px;
 }
 .provide__item i {
