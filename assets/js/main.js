@@ -25,7 +25,13 @@ $(document).ready(function () {
         // slidesPerGroup: 2,
         spaceBetween: 30,
         loop: true,
-        // freeMode: true,
+        freeMode: true,
+        pauseOnMouseEnter: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
