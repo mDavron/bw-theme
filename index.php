@@ -85,6 +85,7 @@
         <!-- team inner end-->
       </div>
     </div>
+
     <div class="provide" id="provide">
       <div class="container">
         <div class="block__head inverse">
@@ -104,24 +105,10 @@
           </div>
           <?php endwhile; ?>
           <?php endif; ?>
-          <!--
-          <div class="provide__item">
-            <i class="icon-heart"></i>
-            <h3 class="provide__item-title">We provide you love</h3>
-            <p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
-            </p>
-          </div>
-
-          <div class="provide__item">
-            <i class="icon-upload-cloud-outline"></i>
-            <h3 class="provide__item-title">And Some Cloud</h3>
-            <p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
-            </p>
-          </div> -->
-
         </div>
       </div>
     </div>
+
     <div class="contact" id="contact">
       <div class="container">
         <div class="block__head">
