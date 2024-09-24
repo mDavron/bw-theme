@@ -9,11 +9,9 @@
         #1d1d1d;
       }
       </style>
-
       <div class="container">
         <div class="about__inner">
           <!-- <?php  $card = get_field('card');?> -->
-
           <?php if(get_field('card')): ?>
           <?php while(has_sub_field('card')) : ?>
           <div class="about__item">
@@ -28,13 +26,14 @@
         </div>
       </div>
     </div>
+
     <div class="team" id="team">
       <div class="container">
         <div class="block__head">
           <h2 class="block__title"><?php the_field('team_title');?></h2>
           <p class="block__text"><?php the_field('team_description');?></p>
         </div>
-        <!-- team inner start-->
+        <!-- team inner starts-->
         <div class="team__inner">
 
           <!-- Swiper -->
@@ -82,15 +81,15 @@
           <!-- Swiper JS -->
 
         </div>
-        <!-- team inner end-->
+        <!-- team inner ends -->
       </div>
     </div>
 
     <div class="provide" id="provide">
       <div class="container">
         <div class="block__head inverse">
-          <h2 class="block__title">We provide you everything</h2>
-          <p class="block__text">Maybe not everything, but we provide you some stuff.</p>
+          <h2 class="block__title"><?php the_field('services_title')?></h2>
+          <p class="block__text"><?php the_field('services_text')?></p>
         </div>
         <div class="provide__inner">
           <?php $arr = get_field('services_card')?>
@@ -112,24 +111,25 @@
     <div class="contact" id="contact">
       <div class="container">
         <div class="block__head">
-          <h2 class="block__title">Contac Us</h2>
-          <p class="block__text">We know what we need to do</p>
+          <h2 class="block__title"><?php the_field('contact_title');?></h2>
+          <p class="block__text"><?php the_field('contact_description');?></p>
         </div>
         <div class="contact__inner">
           <div class="contact__icon-box">
             <div class="contact__item">
               <i class="icon-phone"></i>
-              <div class="contact__text"><a href="tel:555222333">555-222-333</a></div>
+              <div class="contact__text"><a href="tel:555222333"><?php the_field('contact_phone');?></a></div>
             </div>
             <div class="contact__item">
               <i class="icon-location"></i>
-              <div class="contact__text"><a href="https://goo.gl/maps/ot9BCyYtQbSXoJYRA" target="_blank">Here is
-                  some
-                  address</a></div>
+              <!-- https://goo.gl/maps/ot9BCyYtQbSXoJYRA -->
+              <div class="contact__text"><a href="<?php the_field('contact_adress')?>"
+                  target="_blank"><?php the_field('contact_adress_text');?></a></div>
             </div>
             <div class="contact__item">
-              <i class="icon-mail-alt"></i>
-              <div class="contact__text"><a href="mailto:somemail@hotmail.com">somemail@hotmail.com</a></div>
+              <i class="icon-header"></i>
+              <div class="contact__text"><a href="mailto:somemail@hotmail.com"><?php the_field('contact_email');?></a>
+              </div>
             </div>
           </div>
           <form action="" class="contact__form">
