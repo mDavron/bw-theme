@@ -132,13 +132,14 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form">
+          <!-- <form action="" class="wpcf7-form">
             <input class="contact__name" type="text" placeholder="Full Name">
             <input class="contact__email" type="email" placeholder="Email">
             <input class="contact__number" type="number" placeholder="Number">
             <textarea class="contact__textarea" placeholder="Write your Message here..."></textarea>
             <input type="submit" class="contact__button" value="Submit">
-          </form>
+          </form> -->
+          <?php the_content();?>
         </div>
       </div>
     </div>
